@@ -1,0 +1,19 @@
+{
+  "name": "foussiermarin_3_03072021",
+  "version": "1.0.0",
+  "description": "Projet 3 de la formation OpenClassrooms DevWeb - OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mf1511/FOUSSIERMarin_3_03072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mf1511/FOUSSIERMarin_3_03072021/issues"
+  },
+  "homepage": "https://github.com/mf1511/FOUSSIERMarin_3_03072021#readme"
+}
