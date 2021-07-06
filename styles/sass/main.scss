@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import "menupages";
 
 $primary-color:#9356DC ;
 
@@ -26,7 +26,10 @@ main{
 }
 
 
-   
+a{
+    text-decoration: none;
+    color: black;
+}
     
     .herobanner{
         text-align: center;
@@ -175,8 +178,12 @@ main{
     .far{
         font-size: 30px;
         font-weight: lighter;
+        color: black;
+
         &:hover{
+        
             color: linear-gradient(#FF79DA, #9356DC);
+            font-weight: bold
         }
     }  
     }
@@ -184,7 +191,6 @@ main{
     
     }
 }
-
 
 
 footer{
@@ -256,3 +262,6 @@ footer{
     }
     
 }
+
+
+
