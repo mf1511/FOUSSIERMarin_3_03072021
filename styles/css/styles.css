@@ -1,248 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-h2 {
-  font-size: 19px;
-}
-
-p {
-  font-size: 15px;
-}
-
-h2, p {
-  margin: 0;
-}
-
-.menu {
-  background-color: #f6f6f6;
-  border-radius: 2rem 2rem 0rem 0rem;
-  margin-top: -4rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.entrees {
-  background-color: #f6f6f6;
-  padding: 1rem;
-}
-
-.choix {
-  background-color: white;
-  border-radius: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  padding: 1rem;
-  box-shadow: 5px 5px 0.5rem #c2c2c2;
-}
-
-.prix {
-  display: flex;
-  align-items: flex-end;
-}
-
-.menu__herobanner img {
-  width: 100%;
-  max-width: 100%;
-  max-height: 32rem;
-  object-fit: cover;
-  z-index: 5;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  max-width: 1230px;
+@import"https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap";@import"https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";@import"https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap";@import"https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";#menupages h1{font-family:"Shrikhand",sans-serif;font-weight:normal;font-size:30px}#menupages h2{text-transform:uppercase;font-weight:normal;font-size:20px;padding:0rem 0rem 0rem .5rem;position:relative}#menupages h2::after{content:"";width:3rem;height:.1rem;background-color:#99e2d0;position:absolute;bottom:-0.2rem;left:.5rem}#menupages h3,#menupages p{margin:0px}#menupages h3{font-size:21px}#menupages p{font-size:18px;margin-top:.2rem}.menupages__header h1{text-align:center;margin:.5rem 0rem .5rem 0rem}.menupages__header i{display:flex;align-items:center;justify-content:center;position:absolute;left:1rem;height:2rem;padding-left:1rem;transform:translateY(0.4rem);font-size:20px}.menu{background-color:#f6f6f6;border-radius:2rem 2rem 0rem 0rem;margin-top:-4rem;position:relative;overflow:hidden;padding:1rem}.menu__title{display:flex;justify-content:space-between;align-items:center;padding:0rem 2rem 0rem .5rem}.menu__title i{font-size:25px}.menu .bouton__commander{display:flex;justify-content:center;margin:3rem 0rem 4rem 0rem}.menu .bouton__commander p{background:linear-gradient(#FF79DA, #9356DC);height:4rem;width:14rem;display:flex;align-items:center;justify-content:center;border-radius:2rem;color:#fff}.entrees{background-color:#f6f6f6}.choix{background-color:#fff;border-radius:1.5rem;display:flex;justify-content:space-between;margin-top:1rem;padding:1rem;box-shadow:5px 5px .5rem #c2c2c2}.prix{display:flex;align-items:flex-end;font-weight:bold;padding-right:1rem}.menu__herobanner img{width:100%;max-width:100%;max-height:32rem;object-fit:cover;z-index:5}@media(min-width: 1000px){.menu{display:grid;grid-template-rows:auto auto auto;grid-template-columns:repeat(3, 1fr);column-gap:3rem}.menu__title{grid-column:1/-1}.menu__bouton{grid-column:1/-1}}#homepage h1{font-size:30px}#homepage h2{margin:0rem 0rem .5rem 0rem}body{margin:0}main{max-width:1230px;margin:auto;font-family:"Roboto",sans-serif}.header{display:flex;justify-content:center;padding:.9rem 0rem .8rem 0rem;box-shadow:0 0 .5rem rgba(0,0,0,.25);position:relative}.header__logo{max-width:170px}a{text-decoration:none;color:#000}.herobanner{text-align:center;background-color:#f6f6f6;padding:0rem 0rem 2rem 0rem}.herobanner__localisation{background-color:#eaeaea;color:#353535;padding:1rem 0rem 1rem 0rem;font-weight:bold;margin:0px}.herobanner__localisation>.fas{padding:0rem 1rem 0rem 0rem}.herobanner__title{padding:0rem 5rem 0rem 5rem;margin:1rem 0rem 1rem 0rem}.herobanner__infos{padding:0rem 3rem 0rem 3rem;margin:.5rem 0rem 2rem 0rem;font-size:24px;font-weight:300}.herobanner__button{width:17rem;background:linear-gradient(#FF79DA, #9356DC);border:none;border-radius:2rem;height:3.5rem;padding:1rem 2rem 1rem 2rem;margin:2rem 2rem 2rem 2rem;color:#fff;font-size:20px;font-weight:500;text-decoration:none}.fonctionnement{margin:.5rem 0rem 1rem 0rem;display:flex;flex-direction:column;justify-content:center;padding:0rem 2rem 0rem 2rem}.fonctionnement__steps{padding:0;margin:0;counter-reset:compteListe}.fonctionnement__etapes{display:flex;align-items:center;background-color:#f6f6f6;margin:1rem 0rem 1rem 0rem;padding:.5rem;border-radius:1.5rem;box-shadow:5px 5px .5rem #c2c2c2;position:relative}.fonctionnement__etapes>p{font-weight:700;font-size:22px;padding:0rem 2rem 0rem 0rem;justify-content:left}.fonctionnement__etapes__icon{padding:0rem 2rem 0rem 2rem;color:gray;font-size:1.5rem}.fonctionnement__etapes::before{counter-increment:compteListe 1;content:counter(compteListe) " ";height:2rem;width:2rem;border-radius:100px;display:flex;justify-content:center;align-items:center;color:#fff;left:-0.75rem;position:absolute;background-color:#9356dc}.fonctionnement__etapes:hover{background-color:#f2eafb}.fonctionnement__etapes:hover .fonctionnement__etapes__icon{color:#9356dc}.restaurants{background-color:#f6f6f6;padding:2rem 2rem 2rem 2rem}.restaurants__card{background-color:#fff;margin:1rem 0rem 1rem 0rem;border-radius:1rem;box-shadow:5px 5px .5rem #c2c2c2}.restaurants__card__imgimg{width:100%;height:14rem;object-fit:cover;border-radius:1rem 1rem 0 0}.restaurants__card__infos{display:flex;justify-content:space-between;align-items:center;background-color:#fff;border-radius:0rem 0rem 1rem 1rem;padding:.5rem 1rem 1rem 1rem}.restaurants__card__infos p{margin:0rem;font-size:24px;font-weight:300}.restaurants__card__infos .far{font-size:30px;font-weight:lighter;color:#000}.restaurants__card__infos .far:hover{color:linear-gradient(#FF79DA, #9356DC);font-weight:bold}footer{background-color:#353535;color:#fff;padding:1rem 2rem 2rem 2rem}footer nav{display:flex;flex-direction:column;margin-top:1rem}footer a{text-decoration:none;color:#fff;margin-top:.5rem;font-size:20px}footer a i{padding-right:1rem;width:1.2rem}.footer__container{max-width:1150px;margin:auto}.footer__container__title{font-family:"Shrikhand",sans-serif;font-weight:normal;font-size:19px}@media(min-width: 769px){.restaurants{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr 1fr;column-gap:2rem}.restaurants h1{grid-column:1/-1}.fonctionnement__etapes{width:22rem;margin-left:1rem}.fonctionnement__etapes p{font-size:17px;padding:0rem 1rem 0rem 0rem}.fonctionnement__etapes__icon{padding:0rem 1.4rem 0rem 1.9rem}.fonctionnement__steps{display:flex;justify-content:space-between}.fonctionnement__steps :first-child{margin-left:0rem}}@media(max-width: 420px){#homepage .herobanner__title,#homepage .herobanner__infos{padding:0rem 2rem 0rem 2rem}#homepage h1{font-size:25px}#homepage p{font-size:22px}#homepage .herobanner__button{font-size:18px;margin:0}#homepage .fonctionnement__etapes__infos{font-size:18px}#homepage .fonctionnement__etapes__icon{padding:0rem 1rem 0rem 2rem}#homepage .restaurants p{font-size:20px}#homepage .restaurants h2{font-size:20px}#homepage .restaurants img{height:10rem}}/*# sourceMappingURL=styles.css.map */
   margin: auto;
-  font-family: "Roboto", sans-serif;
 }
-
-.header {
-  display: flex;
-  justify-content: center;
-  padding: 0.9rem 0rem 0.8rem 0rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  position: relative;
-}
-.header__logo {
-  max-width: 170px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.herobanner {
-  text-align: center;
-  background-color: #f6f6f6;
-  padding: 0rem 0rem 2rem 0rem;
-}
-.herobanner__localisation {
-  background-color: #eaeaea;
-  color: #353535;
-  padding: 1rem 0rem 1rem 0rem;
-  font-weight: bold;
-  margin: 0px;
-}
-.herobanner__localisation > .fas {
-  padding: 0rem 1rem 0rem 0rem;
-}
-.herobanner__title {
-  padding: 0rem 5rem 0rem 5rem;
-  margin: 1rem 0rem 1rem 0rem;
-  font-size: 30px;
-}
-.herobanner__infos {
-  padding: 0rem 3rem 0rem 3rem;
-  margin: 0.5rem 0rem 2rem 0rem;
-  font-size: 24px;
-  font-weight: 300;
-}
-.herobanner__button {
-  width: 17rem;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border: none;
-  border-radius: 2rem;
-  height: 3.5rem;
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 2rem 2rem 2rem 2rem;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.fonctionnement {
-  margin: 0.5rem 0rem 1rem 0rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0rem 2rem 0rem 2rem;
-}
-.fonctionnement__steps {
-  padding: 0;
-  margin: 0;
-  counter-reset: compteListe;
-}
-.fonctionnement__etapes {
-  display: flex;
-  align-items: center;
-  background-color: #f6f6f6;
-  margin: 1rem 0rem 1rem 0rem;
-  padding: 0.5rem;
-  border-radius: 1.5rem;
-  box-shadow: 5px 5px 0.5rem #c2c2c2;
-  position: relative;
-}
-.fonctionnement__etapes > p {
-  font-weight: 700;
-  font-size: 22px;
-  padding: 0rem 2rem 0rem 0rem;
-  justify-content: left;
-}
-.fonctionnement__etapes__icon {
-  padding: 0rem 2rem 0rem 2rem;
-  color: gray;
-  font-size: 1.5rem;
-}
-.fonctionnement__etapes::before {
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
-  height: 2rem;
-  width: 2rem;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  left: -0.75rem;
-  position: absolute;
-  background-color: #9356DC;
-}
-.fonctionnement__etapes:hover {
-  background-color: #f2eafb;
-}
-.fonctionnement__etapes:hover .fonctionnement__etapes__icon {
-  color: #9356DC;
-}
-
-.restaurants {
-  background-color: #f6f6f6;
-  padding: 2rem 2rem 2rem 2rem;
-}
-.restaurants h1 {
-  font-size: 30px;
-  margin: 0.5rem 0rem 0.5rem 0rem;
-}
-.restaurants__card {
-  background-color: white;
-  margin: 1rem 0rem 1rem 0rem;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 0.5rem #c2c2c2;
-}
-.restaurants__card__imgimg {
-  width: 100%;
-  height: 14rem;
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-}
-.restaurants__card__infos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border-radius: 0rem 0rem 1rem 1rem;
-  padding: 0.5rem 1rem 1rem 1rem;
-}
-.restaurants__card__infos h2 {
-  margin: 0rem 0rem 0.5rem 0rem;
-}
-.restaurants__card__infos p {
-  margin: 0rem;
-  font-size: 24px;
-  font-weight: 300;
-}
-.restaurants__card__infos .far {
-  font-size: 30px;
-  font-weight: lighter;
-  color: black;
-}
-.restaurants__card__infos .far:hover {
-  color: linear-gradient(#FF79DA, #9356DC);
-  font-weight: bold;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 1rem 2rem 1rem 2rem;
-}
-footer h2 {
+.footer__container__title {
   font-family: "Shrikhand", sans-serif;
   font-weight: normal;
-}
-footer nav {
-  display: flex;
-  flex-direction: column;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-  margin-top: 0.5rem;
-  font-size: 20px;
-}
-footer a i {
-  padding-right: 1rem;
-  width: 1.2rem;
-}
-
-.footer__container {
-  max-width: 1150px;
-  margin: auto;
+  font-size: 19px;
 }
 
 @media (min-width: 769px) {
@@ -273,6 +35,36 @@ footer a i {
   }
   .fonctionnement__steps :first-child {
     margin-left: 0rem;
+  }
+}
+@media (max-width: 420px) {
+  #homepage .herobanner__title, #homepage .herobanner__infos {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  #homepage h1 {
+    font-size: 25px;
+  }
+  #homepage p {
+    font-size: 22px;
+  }
+  #homepage .herobanner__button {
+    font-size: 18px;
+    margin: 0;
+  }
+  #homepage .fonctionnement__etapes__infos {
+    font-size: 18px;
+  }
+  #homepage .fonctionnement__etapes__icon {
+    padding: 0rem 1rem 0rem 2rem;
+  }
+  #homepage .restaurants p {
+    font-size: 20px;
+  }
+  #homepage .restaurants h2 {
+    font-size: 20px;
+  }
+  #homepage .restaurants img {
+    height: 10rem;
   }
 }
 

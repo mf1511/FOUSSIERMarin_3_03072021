@@ -13,10 +13,10 @@
 </head>
 
 
-<body>
-   <header>
-       <button><i class="fas fa-arrow-left"></i></button>
-       <img src="/images/logo/ohmyfood@2x.svg" alt="">
+<body id="menupages">
+   <header class="menupages__header">
+       <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+       <h1>ohmyfood</h1>
    </header>
 
    
@@ -25,12 +25,15 @@
        </section>
     <main>
        <section class="menu">
-
+           <div class="menu__title"> 
+               <h1>A la française</h1>
+               <i class="far fa-heart"></i>
+            </div>
            <section class="entrees">
-                <p>entrées</p>
+                <h2>entrées</h2>
                 <div class="choix">
                     <div class="entrees__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -40,7 +43,7 @@
 
                 <div class="choix">
                     <div class="entrees__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -50,7 +53,7 @@
 
                 <div class="choix">
                     <div class="entrees__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -59,12 +62,11 @@
                 </div>
            </section>
 
-
            <section class="plats">
-                <p>plats</p>
+                <h2>plats</h2>
                 <div class="choix">
                     <div class="plats__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -74,7 +76,7 @@
 
                 <div class="choix">
                     <div class="plats__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -84,7 +86,7 @@
 
                 <div class="choix">
                     <div class="plats__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -94,10 +96,10 @@
             </section>
 
             <section class="desserts">
-                <p>desserts</p>
+                <h2>desserts</h2>
                 <div class="choix">
                     <div class="desserts__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -107,7 +109,7 @@
 
                 <div class="choix">
                     <div class="desserts__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -117,7 +119,7 @@
 
                 <div class="choix">
                     <div class="desserts__choix__name">
-                        <h2>Tartare de poulpe acidulé</h2>
+                        <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zests d'orange</p>
                     </div>
                     <div class="prix">
@@ -126,13 +128,21 @@
                 </div>
             </section>
 
+            <div class="menu__bouton">
+                <a class="bouton__commander" href="#"><p>Commander</p></a>
+            </div>
+            
+
        </section>
+
+
+
    </main>
 
 
    <footer>
         <div class="footer__container">
-            <h2>ohmyfood</h2>
+            <p class="footer__container__title">ohmyfood</p>
             <nav>
                 <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant </a>
                 <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>

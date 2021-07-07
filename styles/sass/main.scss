@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import "utils";
 @import "menupages";
 
-$primary-color:#9356DC ;
+
+
+#homepage{
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        margin: 0rem 0rem 0.5rem 0rem;
+    }
+}
 
 body{
-    margin:0;
+    margin: 0;
 }
+
 
 main{
     max-width: 1230px;
@@ -50,7 +62,6 @@ a{
         &__title{
             padding: 0rem 5rem 0rem 5rem;
             margin: 1rem 0rem 1rem 0rem;
-            font-size: 30px;
                 }
         &__infos{
             padding: 0rem 3rem 0rem 3rem;
@@ -60,7 +71,7 @@ a{
                 }
         &__button{
             width: 17rem;
-            background: linear-gradient(#FF79DA, #9356DC);
+            background: linear-gradient($secondary-color, $primary-color);
             border:none;
             border-radius: 2rem;
             height: 3.5rem;
@@ -142,10 +153,7 @@ a{
 .restaurants{
     background-color:#f6f6f6 ;
     padding:2rem 2rem 2rem 2rem;
-    h1{
-        font-size: 30px;
-        margin:0.5rem 0rem 0.5rem 0rem;
-    }
+    
     &__card{
         background-color: white;
         margin:1rem 0rem 1rem 0rem;
@@ -167,9 +175,7 @@ a{
         background-color: white;
         border-radius: 0rem 0rem 1rem 1rem;
         padding: 0.5rem 1rem 1rem 1rem;
-        h2{
-            margin: 0rem 0rem 0.5rem 0rem;
-        }
+        
         p{
             margin: 0rem;
             font-size: 24px;
@@ -196,15 +202,13 @@ a{
 footer{
     background-color: #353535;
     color: white;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     
-    h2{
-        font-family: "Shrikhand", sans-serif;
-        font-weight: normal;
-    }
+    
     nav{
         display: flex;
         flex-direction: column;
+        margin-top: 1rem;
     }
     a{
         text-decoration: none;
@@ -221,6 +225,12 @@ footer{
 .footer__container{
     max-width: 1150px;
     margin: auto;
+    &__title{
+        font-family: "Shrikhand", sans-serif;
+        font-weight: normal;
+        font-size: 19px;
+    }
+    
 }
 
 
@@ -265,3 +275,42 @@ footer{
 
 
 
+
+@media (max-width:420px){
+    #homepage{
+        .herobanner__title, .herobanner__infos{
+            padding: 0rem 2rem 0rem 2rem;
+        }
+        h1{
+            font-size: 25px;
+        }
+        
+        p{
+            font-size: 22px;
+        }
+
+        .herobanner__button{
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .fonctionnement__etapes__infos{
+            font-size: 18px;
+        }
+        .fonctionnement__etapes__icon{
+            padding:0rem 1rem 0rem 2rem;
+        }
+
+        .restaurants{
+            p{
+                font-size: 20px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            img{
+                height: 10rem;
+            }
+        }
+    }
+}
