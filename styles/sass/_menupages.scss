@@ -84,41 +84,68 @@
         justify-content: center;
         margin: 3rem 0rem 4rem 0rem;
         p{
-            background: linear-gradient(#FF79DA, #9356DC);
-            height: 4rem;
-            width: 14rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 2rem;
-            color: white;
+            @include button
 
         }
         
     }
+
+    
    
 }
 
-.entrees{
-    background-color: #f6f6f6;
-}
-
 .choix{
-        background-color: white;
-        border-radius: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation-fill-mode: both;
+    animation: itemAppear 2s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+
+    &__name{
+        flex: 1;
+        }
+    &__prix{
         display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
-        padding:  1rem;
-        box-shadow: 5px 5px 0.5rem #c2c2c2;
+        align-items: flex-end;    
+    }
+    &__confirm{
+        background-color: $tertiary-color;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+    }
+    &:hover &__confirm {
+        margin-right: -1rem;
+      }
+
+    .fa-check-circle{
+        color: white;
+        font-size: 25px;
+        transform: rotate(-180deg);
+        transition-duration: 0.5s;
+        animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    }
+
+    &:hover .fa-check-circle{
+            transform: rotate(0);   
+    }
 }
 
-.prix{
-    display: flex;
-    align-items: flex-end; 
-    font-weight: bold; 
-    padding-right: 1rem;      
-}
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/10}s;
+    }
+  }
+
 
 .menu__herobanner img{
     width: 100%;
@@ -142,7 +169,4 @@
             grid-column: 1/-1;
         }
     }
-    
-    
-
 }

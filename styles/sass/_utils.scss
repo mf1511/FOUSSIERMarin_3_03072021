@@ -1,3 +1,31 @@
 $primary-color:#9356DC ;
 $secondary-color: #FF79DA ;
 $tertiary-color: #99E2D0 ;
+
+@mixin button{
+        background: linear-gradient($secondary-color, $primary-color);
+        border:none;
+        border-radius: 2rem;
+        padding: 1rem 2rem 1rem 2rem;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        text-align: center;
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.30);
+
+
+        &:hover {
+            background-color: white;
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+          }
+        }
+
+@keyframes itemAppear {
+  0% {
+    transform: scale(0)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
