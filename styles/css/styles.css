@@ -10,43 +10,42 @@
     transform: scale(1);
   }
 }
-#menupages h1 {
+.menupages__body h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: normal;
   font-size: 30px;
 }
-#menupages h2 {
+.menupages__body h2 {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 20px;
   padding: 0rem 0rem 0rem 0.5rem;
   position: relative;
 }
-#menupages h2::after {
+.menupages__body h2::after {
   content: "";
   width: 3rem;
-  height: 0.1rem;
+  height: 0.2rem;
   background-color: #99E2D0;
   position: absolute;
   bottom: -0.2rem;
   left: 0.5rem;
 }
-#menupages h3, #menupages p {
+.menupages__body h3, .menupages__body p {
   margin: 0px;
 }
-#menupages h3 {
+.menupages__body h3 {
   font-size: 21px;
 }
-#menupages p {
-  font-size: 18px;
+.menupages__body p {
   margin-top: 0.2rem;
 }
 
-.menupages__header h1 {
+.menupages__headerbar h1 {
   text-align: center;
   margin: 0.5rem 0rem 0.5rem 0rem;
 }
-.menupages__header i {
+.menupages__headerbar i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,29 +57,73 @@
   font-size: 20px;
 }
 
-.menu {
+.menupages {
+  max-width: 1280px;
+  margin: auto;
   background-color: #f6f6f6;
   border-radius: 2rem 2rem 0rem 0rem;
   margin-top: -4rem;
   position: relative;
   overflow: hidden;
-  padding: 1rem;
 }
-.menu__title {
+.menupages__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 2rem 0rem 0.5rem;
+  padding: 0rem 2.5rem 0rem 1.5rem;
 }
-.menu__title i {
-  font-size: 25px;
+.menupages__hearth {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
 }
-.menu .bouton__commander {
+.menupages__hearth:hover::before {
+  opacity: 1;
+}
+.menupages__hearth::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border: #f6f6f6;
+}
+.menupages__hearth__like {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+  border: none;
+}
+.menupages__hearth:hover .button__like--noBg {
+  opacity: 0;
+}
+
+.bouton__commander {
   display: flex;
   justify-content: center;
   margin: 3rem 0rem 4rem 0rem;
 }
-.menu .bouton__commander p {
+.bouton__commander p {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 2rem;
@@ -92,9 +135,17 @@
   text-align: center;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.3);
 }
-.menu .bouton__commander p:hover {
+.bouton__commander p:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.entrees, .plats, .desserts {
+  max-width: 100%;
+  padding: 0 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .choix {
@@ -104,18 +155,39 @@
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   cursor: pointer;
   animation-fill-mode: both;
   animation: itemAppear 2s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .choix__name {
   flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.choix__name__description {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 17px;
+}
+.choix__name__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 19px;
 }
 .choix__prix {
   display: flex;
   align-items: flex-end;
+  font-weight: bold;
 }
 .choix__confirm {
   background-color: #99E2D0;
@@ -176,6 +248,10 @@
   animation-delay: 0.8s;
 }
 
+.delay-9 {
+  animation-delay: 0.9s;
+}
+
 .menu__herobanner img {
   width: 100%;
   max-width: 100%;
@@ -185,24 +261,40 @@
 }
 
 @media (min-width: 1000px) {
-  .menu {
+  .menupages {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
   }
-  .menu__title {
+  .menupages__header {
     grid-column: 1/-1;
   }
-  .menu__bouton {
+  .menupages__bouton {
     grid-column: 1/-1;
+  }
+}
+@media (max-width: 450px) {
+  .menupages__body .choix__name__title {
+    font-size: 16px;
+  }
+  .menupages__body .choix__name__description {
+    font-size: 13px;
+  }
+
+  .menupages__header {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .text__bouton__commander {
+    font-size: 20px;
   }
 }
 #homepage h1 {
   font-size: 30px;
 }
 #homepage h2 {
-  margin: 0rem 0rem 0.5rem 0rem;
+  margin: 0rem 0rem 0.15rem 0rem;
+  font-weight: 900;
 }
 
 body {
@@ -334,6 +426,16 @@ a {
   margin: 1rem 0rem 1rem 0rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 0.5rem #c2c2c2;
+  position: relative;
+}
+.restaurants__card .badge__nouveau {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #99E2D0;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  color: #1b6150;
 }
 .restaurants__card__imgimg {
   width: 100%;
@@ -399,7 +501,7 @@ footer a i {
 
   .fonctionnement__etapes {
     width: 22rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
   .fonctionnement__etapes p {
     font-size: 17px;
@@ -416,7 +518,16 @@ footer a i {
     margin-left: 0rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 1300px) {
+  .fonctionnement {
+    padding: 0rem 1.5rem 2rem 1.5rem;
+  }
+
+  .restaurants {
+    padding: 0rem 1.5rem 4rem 1.5rem;
+  }
+}
+@media (max-width: 800px) {
   #homepage .herobanner__title, #homepage .herobanner__infos {
     padding: 0rem 2rem 0rem 2rem;
   }
@@ -437,13 +548,13 @@ footer a i {
     padding: 0rem 1rem 0rem 2rem;
   }
   #homepage .restaurants p {
-    font-size: 20px;
+    font-size: 16px;
   }
   #homepage .restaurants h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   #homepage .restaurants img {
-    height: 10rem;
+    height: 12rem;
   }
 }
 .menu__btn {

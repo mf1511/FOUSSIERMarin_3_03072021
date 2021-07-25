@@ -13,36 +13,39 @@
 </head>
 
 
-<body id="menupages">
-   <header class="menupages__header">
+<body class="menupages__body">
+   <header class="menupages__headerbar">
        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
        <h1>ohmyfood</h1>
+       <div></div>
    </header>
 
    
        <section class="menu__herobanner">
            <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant à la française">
        </section>
-    <main>
-       <section class="menu">
-           <div class="menu__title"> 
-               <div>
-                    <h1>A la française</h1>
-               </div>
-               <div class="restaurants__card__infos__hearth menu__btn card__btn">    
-                    <i class="card__like menu__like menu__like__--bg fas fa-heart fa-2x"></i>
-                    <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x"></i>
-                </div>
-            </div>
-           <section class="entrees">
+    <main class="menupages">
+
+
+        <header class="menupages__header"> 
+            <h1>A la française</h1>
+            <button class="menupages__hearth">    
+                <i class="menupages__hearth__like button__like button__like__--bg fas fa-heart fa-2x"></i>
+                <i class="menupages__hearth__like button__like button__like--noBg far fa-heart fa-2x"></i>
+            </button>
+        </header>
+
+
+
+        <section class="entrees">
                 <h2>entrées</h2>
                 <section class="choix delay-0">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Tartare de poulpe acidulé</div>
+                        <p class="choix__name__description">Aux zests d'orange</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        25€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
@@ -51,11 +54,11 @@
 
                 <section class="choix delay-1">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Velouté de légumes d'antan</div>
+                        <p class="choix__name__description">Carotte, panais, topinambour</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        35€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
@@ -64,27 +67,26 @@
 
                 <section class="choix delay-2">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Soupe à l'oignon</div>
+                        <p class="choix__name__description">Revisitée</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        20€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
                     </div>
                 </section>
-           </section>
-
-           <section class="plats">
+        </section>
+        <section class="plats">
                 <h2>plats</h2>
                 <section class="choix delay-3">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Coquilles Saint-Jacques</div>
+                        <p class="choix__name__description">Accompagnées d'une purée de panais</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        40€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
@@ -93,11 +95,11 @@
 
                 <section class="choix delay-4">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Magret de canard</div>
+                        <p class="choix__name__description">Et parmentier de pommes de terre</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        35€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
@@ -106,27 +108,26 @@
 
                 <section class="choix delay-5">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Pigeonneau d’Ille-et-Vilaine</div>
+                        <p class="choix__name__description">Sur son lit de gnocchis aux légumes</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        44€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
                     </div>
                 </section>
-            </section>
-
-            <section class="desserts">
+        </section>
+        <section class="desserts">
                 <h2>desserts</h2>
                 <section class="choix delay-6">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Pétales de violettes glacés</div>
+                        <p class="choix__name__description">Et purée de noisettes</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        18€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
@@ -135,11 +136,11 @@
 
                 <section class="choix delay-7">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Fondant au chocolat</div>
+                        <p class="choix__name__description">Revisité</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        22€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
@@ -148,27 +149,21 @@
 
                 <section class="choix delay-8">
                     <div class="choix__name">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zests d'orange</p>
+                        <div class="choix__name__title">Millefeuille croustillant</div>
+                        <p class="choix__name__description">Myrtilles et pâte d’amande</p>
                     </div>
                     <div class="choix__prix">
-                        25
+                        23€
                     </div>
                     <div class="choix__confirm">
                         <i class="fas fa-check-circle"></i></i>
                     </div>
                 </section>
-            </section>
-
-            <div class="menu__bouton">
-                <a class="bouton__commander" href="#"><p>Commander</p></a>
-            </div>
+        </section>
+        <div class="menupages__bouton">
+                <a class="bouton__commander" href="#"><p class="text__bouton__commander">Commander</p></a>
+        </div>
             
-
-       </section>
-
-
-
    </main>
 
 

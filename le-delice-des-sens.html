@@ -13,132 +13,171 @@
 </head>
 
 
-<body>
-   <header>
-       <button><i class="fas fa-arrow-left"></i></button>
-       <img src="/images/logo/ohmyfood@2x.svg" alt="">
+<body class="menupages__body">
+   <header class="menupages__headerbar">
+       <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+       <h1>ohmyfood</h1>
+       <div></div>
    </header>
 
-   <main>
-       <section class="herobanner">
-           <img src="/mages/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant à la française">
+   
+       <section class="menu__herobanner">
+           <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant à la française">
        </section>
-
-       <section class="menu">
-
-           <section class="entrees">
-                <p>entrées</p>
-                <div class="entrees__choix">
-                    <div class="entrees__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
-                    </div>
-                    <div class="entrees__choix__prix">
-                        <p>25</p>
-                    </div>
-                </div>
-
-                <div class="entrees__choix">
-                    <div class="entrees__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
-                    </div>
-                    <div class="entrees__choix__prix">
-                        <p>25</p>
-                    </div>
-                </div>
-
-                <div class="entrees__choix">
-                    <div class="entrees__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
-                    </div>
-                    <div class="entrees__choix__prix">
-                        <p>25</p>
-                    </div>
-                </div>
-           </section>
+    <main class="menupages">
 
 
-           <section class="plats">
-                <p>plats</p>
-                <div class="plats__choix">
-                    <div class="plats__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
-                    </div>
-                    <div class="plats__choix__prix">
-                        <p>25</p>
-                    </div>
-                </div>
+        <header class="menupages__header"> 
+            <h1>Le délice des sens</h1>
+            <button class="menupages__hearth">    
+                <i class="menupages__hearth__like button__like button__like__--bg fas fa-heart fa-2x"></i>
+                <i class="menupages__hearth__like button__like button__like--noBg far fa-heart fa-2x"></i>
+            </button>
+        </header>
 
-                <div class="plats__choix">
-                    <div class="plats__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
-                    </div>
-                    <div class="plats__choix__prix">
-                        <p>25</p>
-                    </div>
-                </div>
 
-                <div class="plats__choix">
-                    <div class="plats__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
-                    </div>
-                    <div class="plats__choix__prix">
-                        <p>25</p>
-                    </div>
-                </div>
-            </section>
 
-            <section class="desserts">
-                <p>desserts</p>
-                <div class="dessert__choix">
-                    <div class="desserts__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
+        <section class="entrees">
+                <h2>entrées</h2>
+                <section class="choix delay-0">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Tartare de thon</div>
+                        <p class="choix__name__description">Assaisonné au yuzu</p>
                     </div>
-                    <div class="desserts__choix__prix">
-                        <p>25</p>
+                    <div class="choix__prix">
+                        25€
                     </div>
-                </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
 
-                <div class="dessert__choix">
-                    <div class="desserts__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
+                <section class="choix delay-1">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Bouchée de homard croustillant</div>
+                        <p class="choix__name__description">Et sa farandole de petits légumes</p>
                     </div>
-                    <div class="desserts__choix__prix">
-                        <p>25</p>
+                    <div class="choix__prix">
+                        35€
                     </div>
-                </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
 
-                <div class="dessert__choix">
-                    <div class="desserts__choix__name">
-                        <p>Tartare de poulpe acidulé</p>
-                        <p>Aux zests d'orange</p>
+                <section class="choix delay-2">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Velouté de cèpes</div>
+                        <p class="choix__name__description">Aux truffes</p>
                     </div>
-                    <div class="desserts__choix__prix">
-                        <p>25</p>
+                    <div class="choix__prix">
+                        20€
                     </div>
-                </div>
-            </section>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
+        </section>
+        <section class="plats">
+                <h2>plats</h2>
+                <section class="choix delay-3">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Poulet rôti aux herbes de Provence</div>
+                        <p class="choix__name__description">Et sa crème de truffe</p>
+                    </div>
+                    <div class="choix__prix">
+                        40€
+                    </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
 
-       </section>
+                <section class="choix delay-4">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Langouste rôtie</div>
+                        <p class="choix__name__description">Et ses légumes de saison</p>
+                    </div>
+                    <div class="choix__prix">
+                        35€
+                    </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
+
+                <section class="choix delay-5">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Côte de boeuf Angus</div>
+                        <p class="choix__name__description">Et sa purée de panais</p>
+                    </div>
+                    <div class="choix__prix">
+                        44€
+                    </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
+        </section>
+        <section class="desserts">
+                <h2>desserts</h2>
+                <section class="choix delay-6">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Farandole de desserts</div>
+                        <p class="choix__name__description">Du chef</p>
+                    </div>
+                    <div class="choix__prix">
+                        18€
+                    </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
+
+                <section class="choix delay-7">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Crème brulée</div>
+                        <p class="choix__name__description">Revisitée</p>
+                    </div>
+                    <div class="choix__prix">
+                        22€
+                    </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
+
+                <section class="choix delay-8">
+                    <div class="choix__name">
+                        <div class="choix__name__title">Tiramisu </div>
+                        <p class="choix__name__description">À la noisette</p>
+                    </div>
+                    <div class="choix__prix">
+                        23€
+                    </div>
+                    <div class="choix__confirm">
+                        <i class="fas fa-check-circle"></i></i>
+                    </div>
+                </section>
+        </section>
+        <div class="menupages__bouton">
+                <a class="bouton__commander" href="#"><p class="text__bouton__commander">Commander</p></a>
+        </div>
+            
    </main>
 
 
    <footer>
-    <h2><em></em>ohmyfood</em></h2>
-    <nav>
-        <a href="#"><i class="fas fa-utensils">Proposer un restaurant </i></a>
-        <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
-    </nav>
-</footer>
+        <div class="footer__container">
+            <p class="footer__container__title">ohmyfood</p>
+            <nav>
+                <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant </a>
+                <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 

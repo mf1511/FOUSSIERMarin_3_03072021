@@ -11,7 +11,8 @@
     }
 
     h2{
-        margin: 0rem 0rem 0.5rem 0rem;
+        margin: 0rem 0rem 0.15rem 0rem;
+        font-weight: 900;
     }
 }
 
@@ -142,12 +143,23 @@ a{
 .restaurants{
     background-color:#f6f6f6 ;
     padding:2rem 10rem 2rem 10rem;
-    
     &__card{
         background-color: white;
         margin:1rem 0rem 1rem 0rem;
         border-radius: 1rem;
         box-shadow: 5px 5px 0.5rem #c2c2c2;
+        position: relative;
+
+        .badge__nouveau{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: $tertiary-color;
+            padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+            border-radius: 0.2rem ;
+            color: darken($tertiary-color, 50);
+
+        }
 
         &__imgimg{
             width: 100%;
@@ -170,12 +182,11 @@ a{
             font-size: 24px;
             font-weight: 300;
         }
-    
     }
-
-    
     }
+    
 }
+
 
 
 footer{
@@ -228,7 +239,7 @@ footer{
     .fonctionnement{
         &__etapes{
             width: 22rem;
-            margin-left: 1rem;
+            margin-left: 3rem;
             p{
                 font-size: 17px;
                 padding: 0rem 1rem 0rem 0rem;
@@ -252,10 +263,16 @@ footer{
     
 }
 
+@media (max-width:1300px){
+    .fonctionnement{
+        padding: 0rem 1.5rem 2rem 1.5rem;
+    }
+    .restaurants{
+        padding: 0rem 1.5rem 4rem 1.5rem;
+    }
+}
 
-
-
-@media (max-width:420px){
+@media (max-width:800px){
     #homepage{
         .herobanner__title, .herobanner__infos{
             padding: 0rem 2rem 0rem 2rem;
@@ -273,22 +290,23 @@ footer{
             margin: 0;
         }
 
-        .fonctionnement__etapes__infos{
-            font-size: 18px;
-        }
-        .fonctionnement__etapes__icon{
-            padding:0rem 1rem 0rem 2rem;
-        }
-
+        .fonctionnement{        
+            &__etapes__infos{
+                font-size: 18px;
+            }
+            &__etapes__icon{
+                padding:0rem 1rem 0rem 2rem;
+            }
+    }
         .restaurants{
             p{
-                font-size: 20px;
+                font-size: 16px;
             }
             h2{
-                font-size: 20px;
+                font-size: 18px;
             }
             img{
-                height: 10rem;
+                height: 12rem;
             }
         }
     }
