@@ -291,7 +291,7 @@ footer{
             margin: 0;
         }
 
-        .fonctionnement{        
+        .fonctionnement{       
             &__etapes__infos{
                 font-size: 18px;
             }
@@ -315,37 +315,60 @@ footer{
 
 
 
-.menu{
-    &__btn{
+.menu__btn{
+    position: relative;
+    background-color: #f6f6f6;
+
+    &__hearth{
         height: 2rem;
         width: 2rem;
-        display: flex;
+        background-color: transparent;
+        border: transparent 0px solid;
+        padding: 0;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        cursor: pointer;
+        position: relative;
         background-color: black;
-
         &::before{
-            background:linear-gradient(0deg, $primary-color 0%,$secondary-color 100%);
+            opacity: 0;
+            transition: 0.5s;
             content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             height: 100%;
             width: 100%;
-            opacity: 0;
+            background:linear-gradient(0deg, $primary-color 0%,$secondary-color 100%);
+            border: #f6f6f6;
         }
         &:hover::before{
             opacity: 1;
             transition: .5s;
         }
-    }
-
-    &__like{
-        mix-blend-mode: lighten;
-        position: absolute;
-        background-color: #fff;
-    }
-
+        &__like{
+            transition-duration: .25s;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                mix-blend-mode: lighten;
+                border: none;
+        }
+        &:hover{
+            .menu__like--noBg{
+                opacity: 0;
+            }
+        }
+}
 }
 
-.menu__like--noBg:hover{
-    opacity: 0;
-}
 
 
 

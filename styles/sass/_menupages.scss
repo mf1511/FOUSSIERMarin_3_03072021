@@ -160,8 +160,8 @@
     margin: 1rem 0;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    animation-fill-mode: both;
-    animation: itemAppear 2s;
+    animation-fill-mode: forwards;
+    animation: itemAppear .6s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     max-width: 100%;
     white-space: nowrap;
@@ -264,7 +264,7 @@
     }
 
     .menupages__header{
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 0rem 1rem 0rem 2rem;
 
     }
     .text__bouton__commander{
