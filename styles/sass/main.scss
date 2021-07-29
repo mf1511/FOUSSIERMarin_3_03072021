@@ -151,6 +151,15 @@ a{
             height: 14rem;
             object-fit: cover;
             border-radius: 1rem 1rem 0 0;
+            object-position: bottom;
+            &__lanoteenchantée{
+                width: 100%;
+                object-fit: cover;
+                object-position: 50% 60%;
+                height: 14rem;
+
+            }
+
 
         }
 
