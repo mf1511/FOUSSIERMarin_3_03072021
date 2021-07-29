@@ -111,8 +111,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: lighten;
   border: none;
+  mix-blend-mode: lighten;
 }
 .menupages__hearth:hover .button__like--noBg {
   opacity: 0;
@@ -289,6 +289,10 @@
     font-size: 20px;
   }
 }
+main {
+  font-family: "Roboto", sans-serif;
+}
+
 #homepage h1 {
   font-size: 30px;
 }
@@ -299,10 +303,6 @@
 
 body {
   margin: 0;
-}
-
-main {
-  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -534,6 +534,7 @@ footer a i {
   }
   #homepage h1 {
     font-size: 25px;
+    padding: 2rem 0rem 0rem 0rem;
   }
   #homepage p {
     font-size: 22px;
