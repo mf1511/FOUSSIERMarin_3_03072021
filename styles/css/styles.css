@@ -11,6 +11,73 @@
     transform: scale(1);
   }
 }
+.spinner {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader, .loader:before, .loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation-fill-mode: both;
+  animation: load 1.8s infinite ease-in-out;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+  color: #99E2D0;
+}
+
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+  color: #FF79DA;
+}
+
+.loader:after {
+  left: 3.5em;
+  color: #9356DC;
+}
+
+@keyframes load {
+  0%, 60%, 100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  20% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1000;
+  }
+}
 .menupages__body h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: normal;
