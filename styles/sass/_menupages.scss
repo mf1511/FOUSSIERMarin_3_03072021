@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-
-
-
 .menupages__body{
     h1{
         font-family: "Shrikhand", sans-serif;
@@ -29,7 +26,6 @@
     h3, p{
         margin: 0px;
     }
-
     h3{
         font-size: 21px;
     }
@@ -37,9 +33,6 @@
         margin-top: 0.2rem;
     }
 }
-
-
-
 
 .menupages__headerbar{
         h1{
@@ -58,7 +51,6 @@
             font-size: 20px;
         }
     }
-
 
 .menupages{
     max-width: 1280px;
@@ -87,11 +79,9 @@
         cursor: pointer;
         position: relative;
         background-color: black;
-        
         &:hover::before {
           opacity: 1;
         }
-        
         &::before {
           opacity: 0;
           transition: 0.5s;
@@ -117,21 +107,14 @@
             justify-content:center;
             border: none;
             mix-blend-mode: lighten;
-
-
           }
-        
         &:hover{
             .button__like--noBg{
                 opacity: 0;
             }
         }
       }
-
 }
-
-
-
 
 .bouton__commander{
     display: flex;
@@ -148,10 +131,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
-
 }
-
 
 .choix{
     background-color: white;
@@ -162,27 +142,23 @@
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     animation-fill-mode: forwards;
-    animation: itemAppear .6s;
+    animation: fadein 1s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     max-width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
-
     &__name{
         flex: 1;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-
         &__description{
             margin: 0;
             overflow: hidden;
             white-space: nowrap;       
             text-overflow: ellipsis;
             font-size: 17px;
-
         }
         &__title{
             overflow : hidden;
@@ -190,7 +166,6 @@
             white-space: nowrap;   
             font-weight: bold;    
             font-size: 19px;
-
         }
         }
     &__prix{
@@ -210,7 +185,6 @@
     &:hover &__confirm {
         margin-right: -1rem;
       }
-
     .fa-check-circle{
         color: white;
         font-size: 25px;
@@ -218,18 +192,18 @@
         transition-duration: 0.5s;
         animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     }
-
     &:hover .fa-check-circle{
             transform: rotate(0);   
     }
 }
+
+
 
 @for $i from 0 to 10 {
     .delay-#{$i} {
       animation-delay:  #{$i/10}s;
     }
   }
-
 
 .menu__herobanner img{
     width: 100%;
@@ -238,7 +212,6 @@
     object-fit: cover;
     z-index: 5;
 }
-
 
 @media (min-width:1000px){
     .menupages{
@@ -266,10 +239,8 @@
 
     .menupages__header{
         padding: 0rem 1rem 0rem 2rem;
-
     }
     .text__bouton__commander{
         font-size: 20px;
     }
-      
 }

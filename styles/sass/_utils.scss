@@ -13,24 +13,25 @@ $tertiary-color: #99E2D0 ;
         text-decoration: none;
         text-align: center;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.30);
-
-
         &:hover {
             background-color: white;
             box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+            filter: brightness(1.03);
           }
         }
 
-@keyframes itemAppear {
+@keyframes fadein {
   0% {
-    transform: scale(0)
+    transform: scale(0);
+    transform: translateY(20px);
+    opacity: 0%;
   }
   100% {
     transform: scale(1);
+    transform: translateY(0px);
+    opacity: 100%;
   }
 }
-
-
 
 .spinner{
   position: fixed;
@@ -80,7 +81,6 @@ $tertiary-color: #99E2D0 ;
   color:$secondary-color;
 }
 
-
 .loader:after {
   left: 3.5em;
   color: $primary-color;
@@ -97,14 +97,9 @@ $tertiary-color: #99E2D0 ;
   }
 }
 
-
-
-
 @keyframes loader{
 100% {
   opacity: 0;
   z-index: -1000;
 }
-
 }
-
